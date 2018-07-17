@@ -20,7 +20,8 @@ int bubbleSort(int arr[], int size) {
 
 int main() {
     int unsorted[] = {9, 2, 8, 3, 1, 10, 6, 7, 4, 5,};
-    bubbleSort(unsorted, 9);
+    size_t size = sizeof(unsorted) / sizeof(unsorted[0]);
+    bubbleSort(unsorted, size);
 
     return 0;
 }
